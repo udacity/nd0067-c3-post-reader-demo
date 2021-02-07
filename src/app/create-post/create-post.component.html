@@ -1,0 +1,8 @@
+<form (ngSubmit)="submitForm()">
+  <h1>Create a Post</h1>
+  <input type="text" name="title" [(ngModel)]="title" placeholder="Enter post title">
+  <br>
+  <textarea type="text" name="body" [(ngModel)]="body" placeholder="Enter post body"></textarea>
+  <br>
+  <input type="submit" value="Submit" class="btn btn-primary">
+</form>

@@ -24,13 +24,16 @@ export class PostItemComponent implements OnInit {
 
   upvote(post: Post) {
     post.votes += 1;
+    return post;
   }
 
   downvote(post: Post) {
     post.votes -= 1;
+    return post;
   }
 
   hide(post: Post) {
     this.hidePost.emit(post);
+    return post;
   }
 }
